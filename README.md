@@ -1,4 +1,4 @@
-<h1 class="title">Massroom Docs</h1>
+<a href="/"><h1 class="title">Massroom Docs</h1></a>
 
 <a class="button" href="/">Back to Main</a>
 
