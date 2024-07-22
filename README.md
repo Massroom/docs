@@ -75,16 +75,15 @@ An example is shown below:
 // init bot
 sendButton.addEventListener('click', () => {
   console.log('bot ready');
-  const message = messageInput.value; // get input value
   };
 });
 ```
 
 ### Checking for a specific Command
 
-#### Static Command (eg. /help)
+Tip: the user's sent message is stored as a `message` variable!
 
-Assuming you've stored input value as `message`, eg:
+#### Static Command (eg. /help)
 
 ```javascript
 // inside the event listener
@@ -94,8 +93,6 @@ if (message === '/command') {
 ```
 
 #### Dynamic Command (eg. /ai ask *input*)
-
-Assuming you've stored input value as `message`, eg:
 
 ```javascript
 if (message.startsWith('/command text')) {
