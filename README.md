@@ -4,6 +4,30 @@
 
 Welcome to the Massroom Docs! Here, you'll find comprehensive resources for building chatbots with pure vanilla JS and understanding massroom's functionality.
 
+<table class="toc">
+<tr>
+<th>Table of Contents</th>
+</tr>
+<tr>
+<td><a href="#source-code-documentation">Source Code Documentation</a></td>
+</tr>
+<tr>
+<td><a href="#message-displaying">Message Displaying</a></td>
+</tr>
+<tr>
+<td><a href="#sending-messages">Sending Messages</a></td>
+</tr>
+<tr>
+<td><a href="#chat-commands-documentation">Chat Commands Documentation</a></td>
+</tr>
+<tr>
+<td><a href="#help-utility-commands">Help Utility Commands</a></td>
+</tr>
+<tr>
+<td><a href="#ai-chat-commands">AI Chat Commands</a></td>
+</tr>
+</table>
+
 ## Source Code Documentation
 
 Massroom's core messaging system utilizes Xano's realtime Websocket system, with a custom-built frontend.
