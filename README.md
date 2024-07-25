@@ -71,10 +71,9 @@ There are many ways to init a chatbot but the most common one is when a user cli
 
 ```javascript
 // init bot
-sendButton.addEventListener('click', () => {
-  console.log('bot ready');
-  };
-});
+function botName() {
+  // code
+}
 ```
 
 ### Checking for a specific Command
@@ -83,7 +82,7 @@ Tip: the user’s sent message is stored as a message variable!
 #### Static Command (eg. /help)
 
 ```javascript
-// inside the event listener
+// inside the function
 const message = messageInput.value;
 if (message === '/command') {
   // do something
@@ -120,6 +119,8 @@ Then, go to `search.json` @ the root of the repo, then add:
     "author": "Your alias, username etc."
   },
 ```
+
+Lastly, go to `/js/bot.js` and add the function you defined earlier!
 
 #### Get it on the Main Branch
 Now with the fork you have of our repo, simply open a Pull Request for that branch and after review (up to 7 days), we will merge the PR and your bot will be in Massroom!
