@@ -98,6 +98,27 @@ if (message.startsWith('/command text')) {
   };
 ```
 
+#### Implementing AI Features
+
+Massroom uses the Puter.ai js library to integrate AI chatbots in the chatrooms.
+
+```javascript
+//from the main chatroom's chatbot code
+const question = message.slice('/ai ask'.length).trim();
+
+    var response;
+    //ensure the user is notified
+    mainChannel.message(`<p style="color: #af9cff;">System Bot: Preparing response...</p>`)
+
+    //refer to the puter.ai docs for more
+    puter.ai.chat(question + context, { model: "gpt-5.4-nano" })
+    .then(response => {
+      //displaying the message in the chat
+      mainChannel.message(`<p style="color: #af9cff;">System Bot: ${response}</p>`);
+    });
+```
+
+
 ### Registering a Chatbot
 
 #### Publish to the Store + Main Channel
@@ -109,7 +130,7 @@ Locate the `_data` folder and edit the file `scripts.yml`, add:
   path: js/bots/fileName.js
 ```
 
-Then, go to `search.json` @ the root of the repo, then add:
+To ensure your bot is visible in the chatbot directory, go to `search.json` @ the root of the repo, then add:
 
 ```json
 {
