@@ -123,18 +123,12 @@ const question = message.slice('/ai ask'.length).trim();
 
 #### Publish to the Store + Main Channel
 
-##### THE FOLLOWING IS DEPRECIATED
-
 Locate the `_data` folder and edit the file `scripts.yml`, add:
 
 ```yaml
 - name: Bot Name
   path: js/bots/fileName.js
 ```
-
-##### INSTEAD, USE:
-
-Locate `bot.js` in the `js` folder, then under the list of bot functions add yours.
 
 To ensure your bot is visible in the chatbot directory, go to `search.json` @ the root of the repo, then add:
 
